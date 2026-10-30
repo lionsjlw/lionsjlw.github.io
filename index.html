@@ -54,6 +54,8 @@ nav .links a:hover { color: #8fb6ff; }
 .cat-head h2 { font-family: "Arial Black", "Segoe UI Black", Impact, sans-serif; text-transform: uppercase; font-size: 26px; }
 .cat-head p { color: #8fb6ff; margin-top: 4px; }
 .grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(240px, 1fr)); gap: 20px; }
+.card { scroll-margin-top: 140px; }
+.card:target { outline: 3px solid var(--azul); }
 .card { border: 1px solid var(--borde); border-radius: 16px; overflow: hidden; display: flex; flex-direction: column; transition: box-shadow .2s, transform .2s; background: #fff; }
 .card:hover { box-shadow: 0 12px 30px rgba(0,40,120,.13); transform: translateY(-3px); }
 .foto { background: var(--gris); aspect-ratio: 1 / 1; position: relative; display: flex; align-items: center; justify-content: center; padding: 22px; }
@@ -131,7 +133,7 @@ footer .redes a:hover { color: #8fb6ff; }
     <section class="categoria" data-cat="Camisetas">
       <div class="cat-head"><h2>Camisetas</h2><p>Para ti, tu equipo o tu empresa</p></div>
       <div class="grid">
-      <article class="card" data-cat="Camisetas">
+      <article class="card" id="camiseta-adulto-estampado-frente" data-cat="Camisetas">
         <div class="foto"><svg viewBox="0 0 200 205" class="dibujo"><g transform=""><path d="M62 22 L84 12 Q100 30 116 12 L138 22 L186 50 L166 88 L144 76 L144 192 L56 192 L56 76 L34 88 L14 50 Z" fill="#111111" stroke="#cfd6e3" stroke-width="2" stroke-linejoin="round"/><image href="recursos/logo-blanco.png" x="70" y="62" width="60" height="66"/></g></svg><span class="tec dtf">DTF</span></div>
         <div class="info">
           <h3>Camiseta adulto</h3>
@@ -141,7 +143,7 @@ footer .redes a:hover { color: #8fb6ff; }
           <a class="btn-pedir" href="https://wa.me/573164989636?text=Hola%20Lion%27s%20JLW%2C%20quiero%20cotizar%3A%20Camiseta%20adulto%20%28%2431.000%29" target="_blank" rel="noopener">Pedir por WhatsApp</a>
         </div>
       </article>
-      <article class="card" data-cat="Camisetas">
+      <article class="card" id="camiseta-nino-estampado-frente" data-cat="Camisetas">
         <div class="foto"><svg viewBox="0 0 200 205" class="dibujo"><g transform="translate(25 25) scale(0.75)"><path d="M62 22 L84 12 Q100 30 116 12 L138 22 L186 50 L166 88 L144 76 L144 192 L56 192 L56 76 L34 88 L14 50 Z" fill="#ffffff" stroke="#cfd6e3" stroke-width="2" stroke-linejoin="round"/><image href="recursos/logo-negro.png" x="70" y="62" width="60" height="66"/></g></svg><span class="tec dtf">DTF</span></div>
         <div class="info">
           <h3>Camiseta niño</h3>
@@ -151,7 +153,7 @@ footer .redes a:hover { color: #8fb6ff; }
           <a class="btn-pedir" href="https://wa.me/573164989636?text=Hola%20Lion%27s%20JLW%2C%20quiero%20cotizar%3A%20Camiseta%20ni%C3%B1o%20%28%2420.000%29" target="_blank" rel="noopener">Pedir por WhatsApp</a>
         </div>
       </article>
-      <article class="card" data-cat="Camisetas">
+      <article class="card" id="camiseta-adulto-logo-pecho" data-cat="Camisetas">
         <div class="foto"><svg viewBox="0 0 200 205" class="dibujo"><g transform=""><path d="M62 22 L84 12 Q100 30 116 12 L138 22 L186 50 L166 88 L144 76 L144 192 L56 192 L56 76 L34 88 L14 50 Z" fill="#111111" stroke="#cfd6e3" stroke-width="2" stroke-linejoin="round"/><image href="recursos/logo-blanco.png" x="110" y="58" width="24" height="26"/></g></svg><span class="tec dtf">DTF</span></div>
         <div class="info">
           <h3>Camiseta logo en pecho</h3>
@@ -161,7 +163,7 @@ footer .redes a:hover { color: #8fb6ff; }
           <a class="btn-pedir" href="https://wa.me/573164989636?text=Hola%20Lion%27s%20JLW%2C%20quiero%20cotizar%3A%20Camiseta%20logo%20en%20pecho%20%28%2420.000%29" target="_blank" rel="noopener">Pedir por WhatsApp</a>
         </div>
       </article>
-      <article class="card" data-cat="Camisetas">
+      <article class="card" id="camiseta-piel-de-durazno-hombre" data-cat="Camisetas">
         <div class="foto"><img src="fotos/camiseta-hombre.webp" alt="Camiseta piel de durazno hombre" loading="lazy"><span class="tec sub">Sublimación</span></div>
         <div class="info">
           <h3>Camiseta piel de durazno hombre</h3>
@@ -171,7 +173,7 @@ footer .redes a:hover { color: #8fb6ff; }
           <a class="btn-pedir" href="https://wa.me/573164989636?text=Hola%20Lion%27s%20JLW%2C%20quiero%20cotizar%3A%20Camiseta%20piel%20de%20durazno%20hombre%20%28%2424.000%29" target="_blank" rel="noopener">Pedir por WhatsApp</a>
         </div>
       </article>
-      <article class="card" data-cat="Camisetas">
+      <article class="card" id="camiseta-piel-de-durazno-dama" data-cat="Camisetas">
         <div class="foto"><img src="fotos/camiseta-dama.webp" alt="Camiseta piel de durazno dama" loading="lazy"><span class="tec sub">Sublimación</span></div>
         <div class="info">
           <h3>Camiseta piel de durazno dama</h3>
@@ -186,7 +188,7 @@ footer .redes a:hover { color: #8fb6ff; }
     <section class="categoria" data-cat="Mugs y vasos">
       <div class="cat-head"><h2>Mugs y vasos</h2><p>El regalo que nunca falla</p></div>
       <div class="grid">
-      <article class="card" data-cat="Mugs y vasos">
+      <article class="card" id="mug-blanco-11-oz-caja-x36" data-cat="Mugs y vasos">
         <div class="foto"><svg viewBox="0 0 200 200" class="dibujo"><ellipse cx="90" cy="172" rx="62" ry="8" fill="#000" opacity=".08"/><path d="M140 70 q38 0 38 36 q0 36 -38 36" fill="none" stroke="#e6e9ef" stroke-width="14"/><path d="M140 70 q38 0 38 36 q0 36 -38 36" fill="none" stroke="#cfd6e3" stroke-width="2"/><rect x="30" y="40" width="114" height="130" rx="10" fill="#fff" stroke="#cfd6e3" stroke-width="2"/><ellipse cx="87" cy="42" rx="57" ry="7" fill="#eef1f6" stroke="#cfd6e3" stroke-width="2"/><image href="recursos/logo-negro.png" x="58" y="68" width="58" height="64"/></svg><span class="tec sub">Sublimación</span></div>
         <div class="info">
           <h3>Mug blanco 11 oz</h3>
@@ -196,7 +198,7 @@ footer .redes a:hover { color: #8fb6ff; }
           <a class="btn-pedir" href="https://wa.me/573164989636?text=Hola%20Lion%27s%20JLW%2C%20quiero%20cotizar%3A%20Mug%20blanco%2011%20oz%20%28%2414.000%29" target="_blank" rel="noopener">Pedir por WhatsApp</a>
         </div>
       </article>
-      <article class="card" data-cat="Mugs y vasos">
+      <article class="card" id="mug-color-interno-11-oz" data-cat="Mugs y vasos">
         <div class="foto"><img src="fotos/mugs-personalizados.webp" alt="Mug color interno 11 oz" loading="lazy"><span class="tec sub">Sublimación</span></div>
         <div class="info">
           <h3>Mug color interno 11 oz</h3>
@@ -206,7 +208,7 @@ footer .redes a:hover { color: #8fb6ff; }
           <a class="btn-pedir" href="https://wa.me/573164989636?text=Hola%20Lion%27s%20JLW%2C%20quiero%20cotizar%3A%20Mug%20color%20interno%2011%20oz%20%28%2419.000%29" target="_blank" rel="noopener">Pedir por WhatsApp</a>
         </div>
       </article>
-      <article class="card" data-cat="Mugs y vasos">
+      <article class="card" id="mug-oreja-mickey-color-interno-11-oz" data-cat="Mugs y vasos">
         <div class="foto"><img src="fotos/mug-mickey.webp" alt="Mug oreja Mickey 11 oz" loading="lazy"><span class="tec sub">Sublimación</span></div>
         <div class="info">
           <h3>Mug oreja Mickey 11 oz</h3>
@@ -216,7 +218,7 @@ footer .redes a:hover { color: #8fb6ff; }
           <a class="btn-pedir" href="https://wa.me/573164989636?text=Hola%20Lion%27s%20JLW%2C%20quiero%20cotizar%3A%20Mug%20oreja%20Mickey%2011%20oz%20%28%2419.000%29" target="_blank" rel="noopener">Pedir por WhatsApp</a>
         </div>
       </article>
-      <article class="card" data-cat="Mugs y vasos">
+      <article class="card" id="mug-cuchara-rojo-12-oz" data-cat="Mugs y vasos">
         <div class="foto"><img src="fotos/mug-cuchara.webp" alt="Mug con cuchara 12 oz" loading="lazy"><span class="tec sub">Sublimación</span></div>
         <div class="info">
           <h3>Mug con cuchara 12 oz</h3>
@@ -226,7 +228,7 @@ footer .redes a:hover { color: #8fb6ff; }
           <a class="btn-pedir" href="https://wa.me/573164989636?text=Hola%20Lion%27s%20JLW%2C%20quiero%20cotizar%3A%20Mug%20con%20cuchara%2012%20oz%20%28%2425.000%29" target="_blank" rel="noopener">Pedir por WhatsApp</a>
         </div>
       </article>
-      <article class="card" data-cat="Mugs y vasos">
+      <article class="card" id="mug-magico-rojo-semimate-11-oz" data-cat="Mugs y vasos">
         <div class="foto"><img src="fotos/mug-magico-rojo.webp" alt="Mug mágico rojo 11 oz" loading="lazy"><span class="tec sub">Sublimación</span></div>
         <div class="info">
           <h3>Mug mágico rojo 11 oz</h3>
@@ -236,7 +238,7 @@ footer .redes a:hover { color: #8fb6ff; }
           <a class="btn-pedir" href="https://wa.me/573164989636?text=Hola%20Lion%27s%20JLW%2C%20quiero%20cotizar%3A%20Mug%20m%C3%A1gico%20rojo%2011%20oz%20%28%2421.000%29" target="_blank" rel="noopener">Pedir por WhatsApp</a>
         </div>
       </article>
-      <article class="card" data-cat="Mugs y vasos">
+      <article class="card" id="mug-magico-negro-brillante-11-oz" data-cat="Mugs y vasos">
         <div class="foto"><img src="fotos/mug-magico-negro.webp" alt="Mug mágico negro 11 oz" loading="lazy"><span class="tec sub">Sublimación</span></div>
         <div class="info">
           <h3>Mug mágico negro 11 oz</h3>
@@ -246,7 +248,7 @@ footer .redes a:hover { color: #8fb6ff; }
           <a class="btn-pedir" href="https://wa.me/573164989636?text=Hola%20Lion%27s%20JLW%2C%20quiero%20cotizar%3A%20Mug%20m%C3%A1gico%20negro%2011%20oz%20%28%2425.000%29" target="_blank" rel="noopener">Pedir por WhatsApp</a>
         </div>
       </article>
-      <article class="card" data-cat="Mugs y vasos">
+      <article class="card" id="mug-magico-tapa-y-base-con-cuchara-11-oz" data-cat="Mugs y vasos">
         <div class="foto"><img src="fotos/mug-magico-tapa.webp" alt="Mug mágico con tapa y cuchara" loading="lazy"><span class="tec sub">Sublimación</span></div>
         <div class="info">
           <h3>Mug mágico con tapa y cuchara</h3>
@@ -256,7 +258,7 @@ footer .redes a:hover { color: #8fb6ff; }
           <a class="btn-pedir" href="https://wa.me/573164989636?text=Hola%20Lion%27s%20JLW%2C%20quiero%20cotizar%3A%20Mug%20m%C3%A1gico%20con%20tapa%20y%20cuchara%20%28%2431.000%29" target="_blank" rel="noopener">Pedir por WhatsApp</a>
         </div>
       </article>
-      <article class="card" data-cat="Mugs y vasos">
+      <article class="card" id="mug-pareja-blanco" data-cat="Mugs y vasos">
         <div class="foto"><img src="fotos/mug-pareja.webp" alt="Mugs pareja" loading="lazy"><span class="tec sub">Sublimación</span></div>
         <div class="info">
           <h3>Mugs pareja</h3>
@@ -266,7 +268,7 @@ footer .redes a:hover { color: #8fb6ff; }
           <a class="btn-pedir" href="https://wa.me/573164989636?text=Hola%20Lion%27s%20JLW%2C%20quiero%20cotizar%3A%20Mugs%20pareja%20%28%2436.000%29" target="_blank" rel="noopener">Pedir por WhatsApp</a>
         </div>
       </article>
-      <article class="card" data-cat="Mugs y vasos">
+      <article class="card" id="mug-peltre-21-oz" data-cat="Mugs y vasos">
         <div class="foto"><img src="fotos/mug-peltre.webp" alt="Mug peltre 21 oz" loading="lazy"><span class="tec sub">Sublimación</span></div>
         <div class="info">
           <h3>Mug peltre 21 oz</h3>
@@ -276,7 +278,7 @@ footer .redes a:hover { color: #8fb6ff; }
           <a class="btn-pedir" href="https://wa.me/573164989636?text=Hola%20Lion%27s%20JLW%2C%20quiero%20cotizar%3A%20Mug%20peltre%2021%20oz%20%28%2440.000%29" target="_blank" rel="noopener">Pedir por WhatsApp</a>
         </div>
       </article>
-      <article class="card" data-cat="Mugs y vasos">
+      <article class="card" id="copa-tequilera-opalizada-3-oz" data-cat="Mugs y vasos">
         <div class="foto"><img src="fotos/copa-tequilera.webp" alt="Copa tequilera 3 oz" loading="lazy"><span class="tec sub">Sublimación</span></div>
         <div class="info">
           <h3>Copa tequilera 3 oz</h3>
@@ -286,7 +288,7 @@ footer .redes a:hover { color: #8fb6ff; }
           <a class="btn-pedir" href="https://wa.me/573164989636?text=Hola%20Lion%27s%20JLW%2C%20quiero%20cotizar%3A%20Copa%20tequilera%203%20oz%20%28%2420.000%29" target="_blank" rel="noopener">Pedir por WhatsApp</a>
         </div>
       </article>
-      <article class="card" data-cat="Mugs y vasos">
+      <article class="card" id="cervecero-opalizado-16-oz" data-cat="Mugs y vasos">
         <div class="foto"><img src="fotos/cervecero.webp" alt="Cervecero 16 oz" loading="lazy"><span class="tec sub">Sublimación</span></div>
         <div class="info">
           <h3>Cervecero 16 oz</h3>
@@ -301,7 +303,7 @@ footer .redes a:hover { color: #8fb6ff; }
     <section class="categoria" data-cat="Termos y caramañolas">
       <div class="cat-head"><h2>Termos y caramañolas</h2><p>Tu diseño te acompaña a todas partes</p></div>
       <div class="grid">
-      <article class="card" data-cat="Termos y caramañolas">
+      <article class="card" id="caramanola-blanca-600-ml" data-cat="Termos y caramañolas">
         <div class="foto"><img src="fotos/caramanola-blanca.webp" alt="Caramañola blanca 600 ml" loading="lazy"><span class="tec sub">Sublimación</span></div>
         <div class="info">
           <h3>Caramañola blanca 600 ml</h3>
@@ -311,7 +313,7 @@ footer .redes a:hover { color: #8fb6ff; }
           <a class="btn-pedir" href="https://wa.me/573164989636?text=Hola%20Lion%27s%20JLW%2C%20quiero%20cotizar%3A%20Carama%C3%B1ola%20blanca%20600%20ml%20%28%2420.000%29" target="_blank" rel="noopener">Pedir por WhatsApp</a>
         </div>
       </article>
-      <article class="card" data-cat="Termos y caramañolas">
+      <article class="card" id="caramanola-tapa-rosca-600-ml" data-cat="Termos y caramañolas">
         <div class="foto"><img src="fotos/caramanola-rosca.webp" alt="Caramañola tapa rosca 600 ml" loading="lazy"><span class="tec sub">Sublimación</span></div>
         <div class="info">
           <h3>Caramañola tapa rosca 600 ml</h3>
@@ -321,7 +323,7 @@ footer .redes a:hover { color: #8fb6ff; }
           <a class="btn-pedir" href="https://wa.me/573164989636?text=Hola%20Lion%27s%20JLW%2C%20quiero%20cotizar%3A%20Carama%C3%B1ola%20tapa%20rosca%20600%20ml%20%28%2429.000%29" target="_blank" rel="noopener">Pedir por WhatsApp</a>
         </div>
       </article>
-      <article class="card" data-cat="Termos y caramañolas">
+      <article class="card" id="caramanola-tapa-transparente-600-ml" data-cat="Termos y caramañolas">
         <div class="foto"><img src="fotos/caramanola-transparente.webp" alt="Caramañola tapa transparente 600 ml" loading="lazy"><span class="tec sub">Sublimación</span></div>
         <div class="info">
           <h3>Caramañola tapa transparente 600 ml</h3>
@@ -331,7 +333,7 @@ footer .redes a:hover { color: #8fb6ff; }
           <a class="btn-pedir" href="https://wa.me/573164989636?text=Hola%20Lion%27s%20JLW%2C%20quiero%20cotizar%3A%20Carama%C3%B1ola%20tapa%20transparente%20600%20ml%20%28%2431.000%29" target="_blank" rel="noopener">Pedir por WhatsApp</a>
         </div>
       </article>
-      <article class="card" data-cat="Termos y caramañolas">
+      <article class="card" id="caramanola-magica-600-ml" data-cat="Termos y caramañolas">
         <div class="foto"><img src="fotos/caramanola-magica.webp" alt="Caramañola mágica 600 ml" loading="lazy"><span class="tec sub">Sublimación</span></div>
         <div class="info">
           <h3>Caramañola mágica 600 ml</h3>
@@ -341,7 +343,7 @@ footer .redes a:hover { color: #8fb6ff; }
           <a class="btn-pedir" href="https://wa.me/573164989636?text=Hola%20Lion%27s%20JLW%2C%20quiero%20cotizar%3A%20Carama%C3%B1ola%20m%C3%A1gica%20600%20ml%20%28%2432.000%29" target="_blank" rel="noopener">Pedir por WhatsApp</a>
         </div>
       </article>
-      <article class="card" data-cat="Termos y caramañolas">
+      <article class="card" id="termo-digital-blanco" data-cat="Termos y caramañolas">
         <div class="foto"><img src="fotos/termo-digital.webp" alt="Termo digital" loading="lazy"><span class="tec sub">Sublimación</span></div>
         <div class="info">
           <h3>Termo digital</h3>
@@ -351,7 +353,7 @@ footer .redes a:hover { color: #8fb6ff; }
           <a class="btn-pedir" href="https://wa.me/573164989636?text=Hola%20Lion%27s%20JLW%2C%20quiero%20cotizar%3A%20Termo%20digital%20%28%2451.000%29" target="_blank" rel="noopener">Pedir por WhatsApp</a>
         </div>
       </article>
-      <article class="card" data-cat="Termos y caramañolas">
+      <article class="card" id="termo-bebe" data-cat="Termos y caramañolas">
         <div class="foto"><img src="fotos/termo-bebe.webp" alt="Termo infantil" loading="lazy"><span class="tec sub">Sublimación</span></div>
         <div class="info">
           <h3>Termo infantil</h3>
@@ -361,7 +363,7 @@ footer .redes a:hover { color: #8fb6ff; }
           <a class="btn-pedir" href="https://wa.me/573164989636?text=Hola%20Lion%27s%20JLW%2C%20quiero%20cotizar%3A%20Termo%20infantil%20%28%2453.000%29" target="_blank" rel="noopener">Pedir por WhatsApp</a>
         </div>
       </article>
-      <article class="card" data-cat="Termos y caramañolas">
+      <article class="card" id="termo-25-oz-tapa-oreja" data-cat="Termos y caramañolas">
         <div class="foto"><img src="fotos/termo-25oz.webp" alt="Termo 25 oz con pitillo" loading="lazy"><span class="tec sub">Sublimación</span></div>
         <div class="info">
           <h3>Termo 25 oz con pitillo</h3>
@@ -376,7 +378,7 @@ footer .redes a:hover { color: #8fb6ff; }
     <section class="categoria" data-cat="Otros sublimables">
       <div class="cat-head"><h2>Regalos y más</h2><p>Detalles únicos con tus fotos</p></div>
       <div class="grid">
-      <article class="card" data-cat="Otros sublimables">
+      <article class="card" id="gorra-para-sublimacion" data-cat="Otros sublimables">
         <div class="foto"><img src="fotos/gorra.webp" alt="Gorra" loading="lazy"><span class="tec sub">Sublimación</span></div>
         <div class="info">
           <h3>Gorra</h3>
@@ -386,7 +388,7 @@ footer .redes a:hover { color: #8fb6ff; }
           <a class="btn-pedir" href="https://wa.me/573164989636?text=Hola%20Lion%27s%20JLW%2C%20quiero%20cotizar%3A%20Gorra%20%28%2413.000%29" target="_blank" rel="noopener">Pedir por WhatsApp</a>
         </div>
       </article>
-      <article class="card" data-cat="Otros sublimables">
+      <article class="card" id="pad-mouse-rectangular-19x21-cm" data-cat="Otros sublimables">
         <div class="foto"><img src="fotos/pad-mouse.webp" alt="Pad mouse" loading="lazy"><span class="tec sub">Sublimación</span></div>
         <div class="info">
           <h3>Pad mouse</h3>
@@ -396,7 +398,7 @@ footer .redes a:hover { color: #8fb6ff; }
           <a class="btn-pedir" href="https://wa.me/573164989636?text=Hola%20Lion%27s%20JLW%2C%20quiero%20cotizar%3A%20Pad%20mouse%20%28%2413.000%29" target="_blank" rel="noopener">Pedir por WhatsApp</a>
         </div>
       </article>
-      <article class="card" data-cat="Otros sublimables">
+      <article class="card" id="media-media-cana-par" data-cat="Otros sublimables">
         <div class="foto"><img src="fotos/media.webp" alt="Medias media caña" loading="lazy"><span class="tec sub">Sublimación</span></div>
         <div class="info">
           <h3>Medias media caña</h3>
@@ -406,7 +408,7 @@ footer .redes a:hover { color: #8fb6ff; }
           <a class="btn-pedir" href="https://wa.me/573164989636?text=Hola%20Lion%27s%20JLW%2C%20quiero%20cotizar%3A%20Medias%20media%20ca%C3%B1a%20%28%2423.000%29" target="_blank" rel="noopener">Pedir por WhatsApp</a>
         </div>
       </article>
-      <article class="card" data-cat="Otros sublimables">
+      <article class="card" id="poncho-para-sublimacion" data-cat="Otros sublimables">
         <div class="foto"><img src="fotos/poncho.webp" alt="Poncho" loading="lazy"><span class="tec sub">Sublimación</span></div>
         <div class="info">
           <h3>Poncho</h3>
@@ -416,7 +418,7 @@ footer .redes a:hover { color: #8fb6ff; }
           <a class="btn-pedir" href="https://wa.me/573164989636?text=Hola%20Lion%27s%20JLW%2C%20quiero%20cotizar%3A%20Poncho%20%28%2425.000%29" target="_blank" rel="noopener">Pedir por WhatsApp</a>
         </div>
       </article>
-      <article class="card" data-cat="Otros sublimables">
+      <article class="card" id="bolsa-de-papel-sublimable" data-cat="Otros sublimables">
         <div class="foto"><img src="fotos/bolsa-papel.webp" alt="Bolsa de regalo" loading="lazy"><span class="tec sub">Sublimación</span></div>
         <div class="info">
           <h3>Bolsa de regalo</h3>
@@ -426,7 +428,7 @@ footer .redes a:hover { color: #8fb6ff; }
           <a class="btn-pedir" href="https://wa.me/573164989636?text=Hola%20Lion%27s%20JLW%2C%20quiero%20cotizar%3A%20Bolsa%20de%20regalo%20%28%2417.000%29" target="_blank" rel="noopener">Pedir por WhatsApp</a>
         </div>
       </article>
-      <article class="card" data-cat="Otros sublimables">
+      <article class="card" id="bolsa-sublimable-30x40-cm" data-cat="Otros sublimables">
         <div class="foto"><svg viewBox="0 0 200 200" class="dibujo"><path d="M72 60 q0 -40 28 -40 q28 0 28 40" fill="none" stroke="#cfd6e3" stroke-width="7"/><rect x="40" y="55" width="120" height="135" rx="4" fill="#fff" stroke="#cfd6e3" stroke-width="2"/><image href="recursos/logo-negro.png" x="68" y="85" width="64" height="70"/></svg><span class="tec sub">Sublimación</span></div>
         <div class="info">
           <h3>Bolsa tela 30 x 40 cm</h3>
@@ -436,7 +438,7 @@ footer .redes a:hover { color: #8fb6ff; }
           <a class="btn-pedir" href="https://wa.me/573164989636?text=Hola%20Lion%27s%20JLW%2C%20quiero%20cotizar%3A%20Bolsa%20tela%2030%20x%2040%20cm%20%28%2425.000%29" target="_blank" rel="noopener">Pedir por WhatsApp</a>
         </div>
       </article>
-      <article class="card" data-cat="Otros sublimables">
+      <article class="card" id="cuelga-puerta-madera" data-cat="Otros sublimables">
         <div class="foto"><img src="fotos/cuelga-puerta.webp" alt="Cuelga puerta" loading="lazy"><span class="tec sub">Sublimación</span></div>
         <div class="info">
           <h3>Cuelga puerta</h3>
@@ -446,7 +448,7 @@ footer .redes a:hover { color: #8fb6ff; }
           <a class="btn-pedir" href="https://wa.me/573164989636?text=Hola%20Lion%27s%20JLW%2C%20quiero%20cotizar%3A%20Cuelga%20puerta%20%28%2425.000%29" target="_blank" rel="noopener">Pedir por WhatsApp</a>
         </div>
       </article>
-      <article class="card" data-cat="Otros sublimables">
+      <article class="card" id="plato-para-sublimacion-8" data-cat="Otros sublimables">
         <div class="foto"><img src="fotos/plato.webp" alt="Plato 8"" loading="lazy"><span class="tec sub">Sublimación</span></div>
         <div class="info">
           <h3>Plato 8"</h3>
@@ -456,7 +458,7 @@ footer .redes a:hover { color: #8fb6ff; }
           <a class="btn-pedir" href="https://wa.me/573164989636?text=Hola%20Lion%27s%20JLW%2C%20quiero%20cotizar%3A%20Plato%208%22%20%28%2430.000%29" target="_blank" rel="noopener">Pedir por WhatsApp</a>
         </div>
       </article>
-      <article class="card" data-cat="Otros sublimables">
+      <article class="card" id="plato-para-sublimacion-10" data-cat="Otros sublimables">
         <div class="foto"><img src="fotos/plato.webp" alt="Plato 10"" loading="lazy"><span class="tec sub">Sublimación</span></div>
         <div class="info">
           <h3>Plato 10"</h3>
@@ -466,7 +468,7 @@ footer .redes a:hover { color: #8fb6ff; }
           <a class="btn-pedir" href="https://wa.me/573164989636?text=Hola%20Lion%27s%20JLW%2C%20quiero%20cotizar%3A%20Plato%2010%22%20%28%2433.000%29" target="_blank" rel="noopener">Pedir por WhatsApp</a>
         </div>
       </article>
-      <article class="card" data-cat="Otros sublimables">
+      <article class="card" id="piedra-corazon-sh-59" data-cat="Otros sublimables">
         <div class="foto"><img src="fotos/piedra-corazon.webp" alt="Piedra corazón" loading="lazy"><span class="tec sub">Sublimación</span></div>
         <div class="info">
           <h3>Piedra corazón</h3>
@@ -476,7 +478,7 @@ footer .redes a:hover { color: #8fb6ff; }
           <a class="btn-pedir" href="https://wa.me/573164989636?text=Hola%20Lion%27s%20JLW%2C%20quiero%20cotizar%3A%20Piedra%20coraz%C3%B3n%20%28%2434.000%29" target="_blank" rel="noopener">Pedir por WhatsApp</a>
         </div>
       </article>
-      <article class="card" data-cat="Otros sublimables">
+      <article class="card" id="lampara-flor" data-cat="Otros sublimables">
         <div class="foto"><img src="fotos/lampara-flor.webp" alt="Lámpara flor con portarretrato" loading="lazy"><span class="tec sub">Sublimación</span></div>
         <div class="info">
           <h3>Lámpara flor con portarretrato</h3>
@@ -486,7 +488,7 @@ footer .redes a:hover { color: #8fb6ff; }
           <a class="btn-pedir" href="https://wa.me/573164989636?text=Hola%20Lion%27s%20JLW%2C%20quiero%20cotizar%3A%20L%C3%A1mpara%20flor%20con%20portarretrato%20%28%2476.000%29" target="_blank" rel="noopener">Pedir por WhatsApp</a>
         </div>
       </article>
-      <article class="card" data-cat="Otros sublimables">
+      <article class="card" id="portarretrato-caja-de-luz" data-cat="Otros sublimables">
         <div class="foto"><img src="fotos/portarretrato-luz.webp" alt="Portarretrato caja de luz" loading="lazy"><span class="tec sub">Sublimación</span></div>
         <div class="info">
           <h3>Portarretrato caja de luz</h3>
